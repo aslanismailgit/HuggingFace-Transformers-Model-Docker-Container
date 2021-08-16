@@ -20,9 +20,7 @@ def makecalc():
 
 if __name__ == '__main__':
 
-    lang = "tr"
-    model_path = './models/transformers_tr/' 
-    print("-----else-----", lang)
+    model_path = './models/transformers/' 
     model = TFAutoModelForSequenceClassification.from_pretrained(model_path, local_files_only=True)
     print("----------- transformer model loaded ------------")
     tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)

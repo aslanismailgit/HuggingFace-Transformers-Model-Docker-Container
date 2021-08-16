@@ -11,7 +11,7 @@ classifier = pipeline('sentiment-analysis', model=model, tokenizer=tokenizer)
 classifier.save_pretrained(model_path)
 #%% test if it works
 classifier(["good"]) 
-# [{'label': '5 stars', 'score': 0.5322708487510681}]
+
 #%% load model from local directory if it works
 model = TFAutoModelForSequenceClassification.from_pretrained(model_path, local_files_only=True)
 print("----------- transformer model loaded ------------")
@@ -19,5 +19,5 @@ tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)
 print("----------- transformer tokenizer loaded ------------")
 classifier = pipeline('sentiment-analysis', model=model, tokenizer=tokenizer)
 classifier(["good"]) 
-# [{'label': '5 stars', 'score': 0.5322708487510681}]
+
 # %%
