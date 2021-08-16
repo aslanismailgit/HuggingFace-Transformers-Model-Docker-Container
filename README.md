@@ -8,7 +8,7 @@
  - Step 2: Create a minimal flask app, in fact you can use the above one without changing anything. Just replace your model with the one in the models directory. Recommend to test your app at this level. 
  - Step 3: Containerize the app using Dockerfile:
 		  `docker build --tag mlapp . `
-		  `docker run -i -p 9000:5000 mlapp` *(add -d flag to run in detach mode in the background, you can 9000 as you need)* 
+		  `docker run -i -p 9000:5000 mlapp` *(add -d flag to run in detach mode in the background, you can change 9000 as you need)* 
 		- Check if your docker is up and running 
 		  `docker ps`
 
