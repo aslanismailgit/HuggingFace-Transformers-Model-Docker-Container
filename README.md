@@ -1,7 +1,7 @@
 
 # How to containerize a HuggingFace Transformers Model using Docker? 
 
-*I assume you already a little bit familiar with below libraries and docker.* 
+*I assume you are already a little bit familiar with below libraries and docker.* 
 **Required libraries:** Flask, transformers, tensorflow. (pip or conda as you wish, I used pip) 
 - If you are using tensorflow, as I do, you will need PyTorch only if you are using a hf model trained on PyTorch, with the flag from_pt=true. But, to reload and re-use the model from local you don’t need PyTorch again, so will not be needed in your container. 
  - Step 1: Load and save the transformer model in a local directory using save_hf_model.py 
