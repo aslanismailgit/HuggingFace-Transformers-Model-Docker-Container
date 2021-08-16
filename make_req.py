@@ -10,12 +10,12 @@ headers = {'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
 r = requests.post(url, data=j_data, headers=headers)
 print(r, r.text)
 # %%
-r
+# r
 # %%
-sent_score = json.loads(r.text)
-sent_score
+# sent_score = json.loads(r.text)
+# sent_score
 # %%
-label = sent_score[0]["label"]
-score = sent_score[0]["score"]
-label, score
+# label = sent_score[0]["label"]
+# score = sent_score[0]["score"]
+# label, score
 # %%
