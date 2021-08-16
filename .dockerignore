@@ -1,6 +1,7 @@
+.gitignore
 fapp_env
-yedek
 README.md
 todos.txt
 make_req.py
 save_hf_models.py
+
